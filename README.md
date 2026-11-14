@@ -2,30 +2,36 @@
 
 Deutsche Website für **Insect Hunters Town** — Lodge und Touren in Mindima, Chimbu Province, Papua-Neuguinea.
 
-Statische Mehrseiten-Site (HTML / CSS / JS). Kein Build-Schritt, kein Booking-Backend. Anfragen laufen über `mailto:`.
+Statische Mehrseiten-Site (HTML / CSS / JS) unter `public/`, deploybar als Cloudflare Worker (`wrangler.jsonc`). Kein Booking-Backend. Anfragen laufen über `mailto:`.
 
 ## Lokal starten
 
 Im Projektordner:
 
 ```bash
-python3 -m http.server 8080 --bind 127.0.0.1
+python3 -m http.server 8080 --bind 127.0.0.1 --directory public
+```
+
+oder:
+
+```bash
+npm start
 ```
 
 Dann öffnen: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
-Alternativ jede andere Static-File-Auslieferung (z. B. `npx serve .`).
+Mit Wrangler: `npm install && npm run dev`
 
 ## Seiten
 
 | Seite | Datei |
 | --- | --- |
-| Start | `index.html` |
-| Lodge | `lodge.html` |
-| Touren (inkl. Festivals) | `touren.html` |
-| Individuell / Gruppenreisen | `individuell.html` |
-| Über uns | `ueber-uns.html` |
-| Anfrage / Kontakt | `kontakt.html` |
+| Start | `public/index.html` |
+| Lodge | `public/lodge.html` |
+| Touren (inkl. Festivals) | `public/touren.html` |
+| Individuell / Gruppenreisen | `public/individuell.html` |
+| Über uns | `public/ueber-uns.html` |
+| Anfrage / Kontakt | `public/kontakt.html` |
 
 ## Design-Notizen
 

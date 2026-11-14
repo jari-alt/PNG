@@ -1,0 +1,14 @@
+{
+  "name": "png",
+  "private": true,
+  "description": "Insect Hunters Town — static lodge & tours site for Cloudflare Workers",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler preview",
+    "start": "python3 -m http.server 8080 --bind 127.0.0.1 --directory public"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

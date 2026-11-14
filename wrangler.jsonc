@@ -1,0 +1,14 @@
+{
+  // Insect Hunters Town — static site on Cloudflare Workers
+  "name": "png",
+  "compatibility_date": "2026-11-14",
+  "assets": {
+    "directory": "./public"
+  },
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  }
+}
