@@ -5,6 +5,8 @@
   "assets": {
     "directory": "./public"
   },
+  // Required for Workers Builds preview (`npx wrangler preview`); empty = inherit top-level assets
+  "previews": {},
   "observability": {
     "enabled": true,
     "traces": {
