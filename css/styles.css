@@ -301,20 +301,23 @@ h3 {
 
 .hero-brand {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  font-size: clamp(3.25rem, 9vw, 6.25rem);
   font-weight: 650;
-  letter-spacing: -0.03em;
-  line-height: 0.95;
-  margin: 0 0 1.1rem;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+  margin: 0 0 1.25rem;
   color: #f4f8f5;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
 }
 
 .hero h1 {
   color: var(--gold-soft);
-  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
   font-weight: 500;
-  max-width: 22ch;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  max-width: 28ch;
   margin-bottom: 0.85rem;
 }
 
