@@ -644,15 +644,29 @@ h3 {
   padding: 1.5rem 0.85rem 0.75rem;
 }
 
+.gallery--rooms,
 .gallery--amenities {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: none;
   min-height: 0;
+}
+
+.gallery--rooms {
+  margin-bottom: 0.75rem;
+}
+
+.gallery--amenities {
   margin-top: 1.5rem;
 }
 
+.gallery--rooms .gallery-item:first-child,
 .gallery--amenities .gallery-item:first-child {
   grid-row: auto;
+}
+
+.gallery--rooms .gallery-item {
+  min-height: 180px;
+  aspect-ratio: 4 / 3;
 }
 
 .gallery--amenities .gallery-item {
@@ -987,13 +1001,15 @@ textarea {
     min-height: 180px;
   }
 
+  .gallery--rooms,
   .gallery--amenities {
     grid-template-columns: 1fr;
   }
 
+  .gallery--rooms .gallery-item:first-child,
   .gallery--amenities .gallery-item:first-child {
     grid-column: auto;
-    min-height: 220px;
+    min-height: 180px;
   }
 }
 
