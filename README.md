@@ -39,10 +39,12 @@ Siehe [`docs/design-vs-papua-explorer.md`](docs/design-vs-papua-explorer.md).
 
 ## Platzhalter (vom Betreiber zu ersetzen)
 
-- Hero- und Tour-/Lodge-Fotos
-- Finale Tour- und Lodge-Texte (deutsch)
+- Hero-, Tour- und Lodge-Fotos (Interieurs nach Twin/Double/Single + Bäder; Außenansichten)
+- Finale Tour-Texte (deutsch)
 - Inhaberfoto und -name auf „Über uns“
 - Echte Anfrage-E-Mail statt `anfrage@insecthunterstown.example` (in allen Seiten + `data-email` im Formular)
+
+Lodge-Beschreibungstext ist bereits aus Betreiber-Notizen eingepflegt.
 
 ## Regeln der Site
 

@@ -439,6 +439,23 @@ h3 {
   color: var(--forest);
 }
 
+.fact-list {
+  margin: 0.65rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink-muted);
+}
+
+.fact-list li {
+  margin: 0.35rem 0;
+}
+
+.fact-list strong {
+  display: inline;
+  font-family: var(--font-body);
+  font-size: inherit;
+  color: var(--forest);
+}
+
 /* Tour cards — interaction containers, not hero clutter */
 .tour-grid {
   display: grid;
