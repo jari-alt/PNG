@@ -598,6 +598,7 @@ h3 {
 }
 
 .gallery-item {
+  margin: 0;
   border-radius: var(--radius);
   background:
     linear-gradient(160deg, rgba(216, 230, 220, 0.08), transparent 50%),
@@ -605,20 +606,42 @@ h3 {
   border: 1px solid rgba(216, 230, 220, 0.12);
   position: relative;
   min-height: 120px;
+  overflow: hidden;
 }
 
 .gallery-item:first-child {
   grid-row: 1 / 3;
 }
 
-.gallery-item span {
+.gallery-item span,
+.gallery-item figcaption {
   position: absolute;
   left: 0.75rem;
   bottom: 0.75rem;
+  z-index: 1;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(238, 244, 240, 0.55);
+}
+
+.gallery-item--photo {
+  background: #0f1f18;
+}
+
+.gallery-item--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item--photo figcaption {
+  color: rgba(244, 248, 245, 0.92);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, transparent, rgba(11, 21, 17, 0.55));
+  inset: auto 0 0 0;
+  padding: 1.5rem 0.85rem 0.75rem;
 }
 
 /* Page hero (inner pages) */
