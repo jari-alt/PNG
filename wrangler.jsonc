@@ -1,0 +1,16 @@
+{
+  // Insect Hunters Town — static site on Cloudflare Workers
+  "name": "png",
+  "compatibility_date": "2026-11-14",
+  "assets": {
+    "directory": "./public"
+  },
+  // Required for Workers Builds preview (`npx wrangler preview`); empty = inherit top-level assets
+  "previews": {},
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  }
+}
