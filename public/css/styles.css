@@ -255,25 +255,27 @@ h3 {
   display: grid;
   align-items: end;
   color: var(--mist-soft);
-  background:
-    linear-gradient(180deg, rgba(11, 21, 17, 0.35) 0%, rgba(11, 21, 17, 0.55) 45%, rgba(11, 21, 17, 0.92) 100%),
-    radial-gradient(ellipse 80% 60% at 70% 30%, rgba(79, 154, 110, 0.35), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 20% 70%, rgba(201, 162, 74, 0.2), transparent 55%),
-    linear-gradient(135deg, #163326 0%, #0b1511 45%, #1a3328 100%);
+  background: var(--forest-deep);
   overflow: hidden;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  z-index: 0;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(circle at 15% 25%, rgba(216, 230, 220, 0.08) 0 1px, transparent 2px),
-    radial-gradient(circle at 80% 40%, rgba(216, 230, 220, 0.06) 0 1px, transparent 2px),
-    radial-gradient(circle at 40% 75%, rgba(216, 230, 220, 0.05) 0 1px, transparent 2px);
-  background-size: 120px 120px, 180px 180px, 90px 90px;
-  opacity: 0.7;
-  animation: mist-drift 28s linear infinite;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(11, 21, 17, 0.28) 0%, rgba(11, 21, 17, 0.45) 42%, rgba(11, 21, 17, 0.9) 100%);
   pointer-events: none;
 }
 
@@ -281,6 +283,7 @@ h3 {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
+  z-index: 1;
   height: 35%;
   background: linear-gradient(180deg, transparent, rgba(11, 21, 17, 0.35));
   pointer-events: none;
@@ -293,7 +296,7 @@ h3 {
 
 .hero-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(100% - 2rem, var(--max));
   margin: 0 auto 4.5rem;
   padding-top: 6rem;
